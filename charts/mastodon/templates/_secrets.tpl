@@ -11,6 +11,11 @@ Mastodon secrets.
     secretKeyRef:
       name: {{ include "mastodon.secrets.secretName" . }}
       key: {{ .Values.mastodon.secrets.existingSecretKeys.secretKeyBase }}
+- name: "OTP_SECRET"
+  valueFrom:
+    secretKeyRef:
+      name: {{ include "mastodon.secrets.secretName" . }}
+      key: {{ .Values.mastodon.secrets.existingSecretKeys.otpSecret }}
 - name: "VAPID_PRIVATE_KEY"
   valueFrom:
     secretKeyRef:

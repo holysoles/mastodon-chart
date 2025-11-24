@@ -49,6 +49,7 @@ mastodon:
 
   secrets:
     secret_key_base:                 secretKeyBase
+    otp_secret:                      otpSecret
     vapid:                           # Removed               # The VAPID keys are now in the root of `secrets`
       private_key:                   vapidPrivateKey         # Full name change
       public_key:                    vapidPublicKey          # Full name change

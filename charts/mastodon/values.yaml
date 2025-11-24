@@ -210,6 +210,8 @@ mastodon:
 
     secretKeyBase:
 
+    otpSecret:
+
     # VAPID
     vapidPrivateKey:
     vapidPublicKey:
@@ -225,6 +227,7 @@ mastodon:
     existingSecret:
     existingSecretKeys:
       secretKeyBase: secret-key-base
+      otpSecret: otp-secret
       vapidPrivateKey: vapid-private-key
       vapidPublicKey: vapid-public-key
       arePrimaryKey: are-primary-key
